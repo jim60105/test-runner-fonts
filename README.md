@@ -53,7 +53,7 @@ GitHub Coding Agent 內建的 Playwright MCP Server 預設只能存取本機資�
 
 ### 背景知識
 
-- **防火牆設定不會套用在 MCP 上**：Coding Agent 的防火牆設定只適用於透過 Bash 工具啟動的程序，不適用於 MCP 伺服器。
+- **防火牆設定不會套用在 MCP 上**：Coding Agent 的防火牆設定只適用於透過 Bash 工具啟動的程式，不適用於 MCP 伺服器。
 - **Playwright 預設限制**：Playwright MCP Server 預設只能存取 localhost 或 127.0.0.1 上的資源。
 
 ### 方案一：修改 Playwright MCP Server 設定 (`--allowed-hosts *`)
@@ -83,7 +83,6 @@ GitHub Coding Agent 內建的 Playwright MCP Server 預設只能存取本機資�
 
 **缺點**：
 - 開放所有外部存取可能帶來安全風險
-- 需要關閉防火牆設定才能使 Playwright 存取外部資源
 - 可能載入不必要的外部資源，增加載入時間
 
 ### 方案二：使用 action-install-google-fonts 安裝本地字型
